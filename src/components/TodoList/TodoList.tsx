@@ -17,9 +17,6 @@ export default function TodoList() {
       id: new Date().toISOString()
     }
     setTodos((prev) => [...prev, todo])
-
-    const todosString = localStorage.getItem('todos')
-    const todosObj: Todo[] = JSON.parse(todosString)
   }
 
   const handleDoneTodo = (id: string, done: boolean) => {
